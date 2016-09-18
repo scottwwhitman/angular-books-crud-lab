@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html ng-app="bookApp">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <base href="/">
+
+    <title>Book App</title>
+
+    <!-- STYLESHEETS -->
+    <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- angular -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+
+    <!-- ngRoute -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.min.js"></script>
+
+    <!-- APPLICATION SCRIPTS -->
+    <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="controllers/BooksIndexController.js"></script>
+    <script type="text/javascript" src="controllers/BooksShowController.js"></script>
+
+  </head>
+  <body>
+    <div class="container">
+      <h1>Welcome to Book App</h1>
+      <p>Your book library!</p>
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+          <div ng-view></div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>

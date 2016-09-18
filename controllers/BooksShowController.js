@@ -56,4 +56,9 @@ function BooksShowController ( $http, $routeParams, $location ) {
    }
  }
 
+ vm.cancelBookUpdate = function () {
+   $location.path('/');
+ }
+
+
 }
